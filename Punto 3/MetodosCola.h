@@ -40,7 +40,7 @@ void Cola::Encolar(int d)
 		cout<<"La cola esta llena";
 	}
 }
-	
+
 void Cola::MostrarCola(int Tope)
 {
 	if (Tope==0) return;
@@ -53,7 +53,6 @@ void Cola::LlenarDesdeLista(){
 	ifstream archivo;
 	archivo.open("lista.txt");
 	if (archivo.is_open()){
-		cout<<"Archivo abierto";
 		while(!archivo.eof()){
 			archivo>>dato;
 			Cola::Encolar(dato);
@@ -62,4 +61,23 @@ void Cola::LlenarDesdeLista(){
 	}else{
 		cout<<"\tArchivo no encontrado"<<endl;
 	}
+}
+
+int LeerLista()
+{
+	int Cont=0;
+	int dato;
+	ifstream archivo;
+	archivo.open("lista.txt");
+	if (archivo.is_open()){
+		while(!archivo.eof()){
+			archivo>>dato;
+			Cont++;
+		}	
+		archivo.close();
+	}
+	else{
+		cout<<"\tArchivo no encontrado"<<endl;
+	}
+	return Cont;
 }

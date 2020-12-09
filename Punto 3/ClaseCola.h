@@ -17,4 +17,5 @@ class Cola
 		void LlenarCola(Cola A);
 		void MostrarCola(int Tope);	
 		void LlenarDesdeLista();	
+		int LeerLista();
  };

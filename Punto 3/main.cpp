@@ -3,8 +3,9 @@
 #include <conio.h>
 using namespace std;
 int main(int argc, char** argv) {
-	int i=10;
-	Cola c1 (i);
+	int i;
+	i=LeerLista();
+	Cola c1(i);
 	c1.LlenarDesdeLista(); 
 	cout<<"************* SE INSERTO LA INFORMACION A LA COLA *************"<<endl;
 	cout<<"*********************************************"<<endl;
