@@ -9,9 +9,6 @@ int main(int argc, char** argv) {
 	c1.LlenarDesdeLista(); 
 	cout<<"************* SE INSERTO LA INFORMACION A LA COLA *************"<<endl;
 	cout<<"*********************************************"<<endl;
-	while (!i==0){
-		c1.MostrarCola(i);
-		i--;
-	};
+	c1.MostrarCola(i);
 	return 0;
 }

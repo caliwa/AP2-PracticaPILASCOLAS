@@ -41,10 +41,17 @@ void Cola::Encolar(int d)
 	}
 }
 
-void Cola::MostrarCola(int Tope)
+int Cola::MostrarCola(int i)
 {
-	if (Tope==0) return;
-	cout<<"|"<<vec[Tope-1]<<"|"<<endl;
+	
+	if (i==0)
+	{
+		cout<<"Lista vacia";
+	}
+	else{
+		cout<<"|"<<vec[i-1]<<"|"<<endl;
+		return MostrarCola(i-1);
+	} 
 }
 
 void Cola::LlenarDesdeLista(){

@@ -15,7 +15,7 @@ class Cola
 		void Encolar(int d);
 		bool ColaLlena();
 		void LlenarCola(Cola A);
-		void MostrarCola(int Tope);	
+		int MostrarCola(int i);	
 		void LlenarDesdeLista();	
 		int LeerLista();
  };
